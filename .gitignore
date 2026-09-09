@@ -1,0 +1,8 @@
+# Junk hệ điều hành
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# File hệ thống/editor
+.vscode/
+.idea/
