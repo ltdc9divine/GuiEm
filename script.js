@@ -22,9 +22,8 @@ function makePetal(){
 }
 setInterval(makePetal,650); for(let i=0;i<8;i++) setTimeout(makePetal,i*250);
 
-// Hai nút hẹn ở cuối trang thư: bấm là bung trái tim + nút sáng lên nhẹ
-const afternoonBtn=document.getElementById('afternoonBtn'), nightBtn=document.getElementById('nightBtn');
-[afternoonBtn,nightBtn].forEach(b=>b&&b.addEventListener('click',()=>{b.classList.add('picked');burst();}));
+// Nút cuối trang thư: bấm là bung trái tim & quay về trang đầu đọc lại từ đầu
+document.getElementById('restart').addEventListener('click',()=>{goTo(0);burst();});
 
 function burst(){
   for(let i=0;i<20;i++) setTimeout(makePetal,i*45);
